@@ -1,5 +1,7 @@
 import { TypeOrmModule } from "@nestjs/typeorm";
 
+import { JobOpportunity } from "v1/api/job-opportunity/job-opportunity.entity";
+
 import { ExampleEntity } from "v1/api/example/example.entity";
 
 const { NODE_ENV, MONGODB_URL } = process.env;
@@ -9,5 +11,5 @@ export const MONGO_DB_CONNECT = TypeOrmModule.forRoot({
 	url: MONGODB_URL,
 	synchronize: false,
 	logging: NODE_ENV !== "production",
-	entities: [ExampleEntity],
+	entities: [ExampleEntity, JobOpportunity],
 });
