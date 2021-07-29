@@ -1,0 +1,38 @@
+service: base-project-serverless
+
+useDotenv: true
+configValidationMode: error
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+  lambdaHashingVersion: 20201221
+  environment:
+    LAMBDA: true
+    NODE_ENV: ${env:NODE_ENV}
+    MONGODB_URL: ${env:MONGODB_URL}
+
+package:
+  excludeDevDependencies: true
+  patterns:
+    - dist/index.js
+    - serverless.yml
+    - package.json
+    - yarn.lock
+
+functions:
+  index:
+    handler: dist/index.handler
+    events:
+      - http:
+          cors: true
+          path: "/"
+          method: any
+      - http:
+          cors: true
+          path: "{proxy+}"
+          method: any
