@@ -1,16 +1,9 @@
 import { Field, ObjectType } from "@nestjs/graphql";
-import {
-	BaseEntity,
-	Column,
-	Entity,
-	Repository,
-	ObjectIdColumn,
-	ObjectID,
-} from "typeorm";
+import { Column, Entity, Repository, ObjectIdColumn, ObjectID } from "typeorm";
 
 @Entity("JobOpportunity")
 @ObjectType()
-export class JobOpportunity extends BaseEntity {
+export class JobOpportunity {
 	@Field(() => String)
 	@ObjectIdColumn({
 		name: "_id",
