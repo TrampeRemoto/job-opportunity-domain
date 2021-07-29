@@ -27,7 +27,7 @@ export class JobOpportunity {
 	public description: string;
 
 	@Column()
-	@Field()
+	@Field(() => [String])
 	public skills: Array<string>;
 
 	@Column()
