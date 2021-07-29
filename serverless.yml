@@ -1,4 +1,4 @@
-service: base-project-serverless
+service: user-domain
 
 useDotenv: true
 configValidationMode: error

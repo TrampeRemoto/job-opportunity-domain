@@ -9,7 +9,6 @@ Please check if your PR fulfills the following requirements:
 - [ ] I followed GitFlow pattern to create the branch
 - [ ] My code produces no warnings or errors in the console
 - [ ] Tests for the changes have been added / updated
-- [ ] Swagger Docs for all the possible requests and responses have been added / updated
 - [ ] Mocks fot the database have been added / updated
 - [ ] Lib of the service have been updated
 - [ ] Lib package.json version have been increased and follow semantic versioning

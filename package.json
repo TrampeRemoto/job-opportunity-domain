@@ -1,8 +1,8 @@
 {
-	"name": "base-project-serverless",
+	"name": "user-domain",
 	"version": "0.0.1",
-	"description": "Techmmunity Base Project For Serverless Projects",
-	"author": "Techmmunity",
+	"description": "TrampeRemoto User Domain",
+	"author": "TrampeRemoto",
 	"private": false,
 	"license": "Apache-2.0",
 	"dependencies": {
