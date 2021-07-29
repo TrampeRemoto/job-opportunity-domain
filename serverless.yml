@@ -1,4 +1,4 @@
-service: user-domain
+service: job-opportunity-domain
 
 useDotenv: true
 configValidationMode: error
