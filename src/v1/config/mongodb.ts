@@ -1,8 +1,7 @@
 import { TypeOrmModule } from "@nestjs/typeorm";
 
-import { JobOpportunity } from "v1/api/job-opportunity/job-opportunity.entity";
-
 import { ExampleEntity } from "v1/api/example/example.entity";
+import { JobOpportunity } from "v1/api/job-opportunity/job-opportunity.entity";
 
 const { NODE_ENV, MONGODB_URL } = process.env;
 

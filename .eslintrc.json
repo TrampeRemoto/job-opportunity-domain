@@ -22,7 +22,7 @@
 					"/^./service/",
 					"/consumers/",
 					"/shared/",
-					"/job/",
+					"/jobs/",
 					"/helpers/",
 					"/validate/",
 					"/module/",
